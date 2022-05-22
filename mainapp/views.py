@@ -13,9 +13,7 @@ class NewsPageView(TemplateView):
         context = super().get_context_data(**kwargs)
         # Create your own data
         context["news_title"] = "Громкий новостной заголовок"
-        context[
-            "news_preview"
-        ] = "Предварительное описание, которое заинтересует каждого"
+        context["news_preview"] = "Предварительное описание, которое заинтересует каждого"
         return context
 
 
@@ -33,4 +31,3 @@ class DocSitePageView(TemplateView):
 
 class LoginPageView(TemplateView):
     template_name = "mainapp/login.html"
-    
